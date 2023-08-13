@@ -1,0 +1,38 @@
+@use '@angular/material' as mat;
+@include mat.core();
+
+header{
+    display:flex;
+    width: 100%;
+    justify-content: center;
+    height: 5rem;
+    nav{
+        width: 100%;
+        background-color: aqua;
+        height: 5rem;
+        display: flex;
+        align-items: center;
+        h1 {
+            position: fixed;
+        }
+        ul {
+               display: flex;
+                flex-direction: row;
+    // /* background-color: blueviolet; */
+                justify-content: flex-end;
+                width: 100%;
+
+                li{
+                    list-style: none;
+                    a{
+                        text-decoration: none;
+                        margin-right: 1rem;
+
+                        &:hover {
+                            cursor: pointer;
+                        }
+                    }
+                }
+        }
+    }
+}
