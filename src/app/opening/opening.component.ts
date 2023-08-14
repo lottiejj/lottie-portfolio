@@ -10,8 +10,5 @@ export class OpeningComponent {
   constructor(private router: Router) {
 
   }
-navToHome() {
-  console.log('NAV')
-  this.router.navigateByUrl('/home');
-}
+
 }
