@@ -12,6 +12,7 @@ header{
         height: 5rem;
         display: flex;
         align-items: center;
+        transition: 200ms ease;
         h1 {
             position: relative;
             width: 10rem;
@@ -36,6 +37,10 @@ header{
                         &:hover {
                             cursor: pointer;
                             font-size: xx-large;
+                        }
+                        svg {
+                            height: 2rem;
+                            width: 2rem;
                         }
                     }
                 }
