@@ -7,6 +7,7 @@ import { Film } from './models/film-model';
   providedIn: 'root'
 })
 export class FilmService {
+  public likedFilms: Film[] = [];
   private ROOT_URL = "http://www.omdbapi.com/?apikey=dbe93ea2&";
   constructor(private http: HttpClient) { }
   addFilm(film: Film) {
@@ -26,5 +27,9 @@ export class FilmService {
   }
   addDelay(obs: Observable<any>) {
     return obs.pipe(delay(1000));
+  }
+
+  addToLikes(film: Film) {
+    this.likedFilms.push(film);
   }
 }

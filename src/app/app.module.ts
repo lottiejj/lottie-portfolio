@@ -12,6 +12,7 @@ import { AddFilmsComponent } from './add-films/add-films.component';
 import { HttpClientModule } from '@angular/common/http';
 import { FilmFileComponent } from './films/film-file/film-file.component';
 import { AddFilmComponent } from './films/add-film/add-film.component';
+import { LikesComponent } from './likes/likes.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { AddFilmComponent } from './films/add-film/add-film.component';
     FilmsComponent,
     AddFilmsComponent,
     FilmFileComponent,
-    AddFilmComponent
+    AddFilmComponent,
+    LikesComponent
   ],
   imports: [
     BrowserModule,

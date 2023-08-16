@@ -1,5 +1,6 @@
 import { Component, Input } from '@angular/core';
 import { Film } from '../models/film-model';
+import { FilmService } from '../film-service.service';
 
 @Component({
   selector: 'app-films',
@@ -9,7 +10,12 @@ import { Film } from '../models/film-model';
 export class FilmsComponent {
   @Input()
   film!: Film;
-  constructor() {
+  likedFilms: Film[] = [];
+  constructor(protected filmService: FilmService) {
     console.log(this.film)
+  }
+
+  addToLikes(film: Film) {
+  this.likedFilms.push(film)
   }
 }

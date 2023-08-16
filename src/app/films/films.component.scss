@@ -1,4 +1,6 @@
-
+@use '@angular/material' as mat;
+@include mat.core();
+@import '../../theme.scss';
 
 .film{
     display: flex;
@@ -8,8 +10,19 @@ img{
     position: absolute;
 }
 p{
-    width: 25rem;
+    width: 28rem;
     display: flex;
     justify-content: center;
-    margin-left: 28rem;
+    margin-left: 19rem;
+    text-align: center;
+}
+svg {
+    width: 3rem;
+    height: 3rem;
+    margin-left: 32rem;
+  fill: mat.get-color-from-palette($lottie-portfolio-primary);
+
+  &:hover{
+    cursor:pointer;
+  }
 }
