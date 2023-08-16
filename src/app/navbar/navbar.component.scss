@@ -1,0 +1,57 @@
+@use '@angular/material' as mat;
+@include mat.core();
+@import '../../theme.scss';
+
+header{
+    display: flex;
+    height: 100%;
+    width: 7rem;
+    position: absolute;
+    nav{
+        width: 8rem;
+        background-color: #c2185b;
+        height: 100%;
+        display: flex;
+        transition: 200ms ease;
+        flex-flow: column;
+        justify-content: space-between;
+        h1 {
+            position: relative;
+            width: 3rem;
+            font-variant-caps: petite-caps;
+            margin-left: 0.5rem;
+        }
+        ul {
+               display: flex;
+                flex-direction: row;
+    // /* background-color: blueviolet; */
+                justify-content: flex-end;
+                width: 100%;
+
+                li{
+                    list-style: none;
+                    display: flex;
+                    flex-flow: column;
+                    width: 100%;
+                    margin: 0;
+                
+                    a{
+                        text-decoration: none;
+                        font-variant-caps: all-petite-caps;
+                        font-size: x-large;
+                        color: black;
+                
+                        svg {
+                            height: 2rem;
+                            width: 2rem;
+                            &:hover {
+                                cursor: pointer;
+                                height: 3rem;
+                                width: 3rem;
+                            }
+                        }
+                    }
+                }
+        }
+    }
+}

@@ -12,8 +12,8 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$lottie-portfolio-primary: mat.define-palette(mat.$pink-palette, 200);
-$lottie-portfolio-accent: mat.define-palette(mat.$teal-palette,50 );
+$lottie-portfolio-primary: mat.define-palette(mat.$pink-palette, 700);
+$lottie-portfolio-accent: mat.define-palette(mat.$gray-palette,900 );
 
 // The warn palette is optional (defaults to red).
 $lottie-portfolio-warn: mat.define-palette(mat.$red-palette);

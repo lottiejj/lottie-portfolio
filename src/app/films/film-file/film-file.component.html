@@ -1,0 +1,7 @@
+<ul *ngIf="filmList">
+    <li *ngFor="let film of filmList">
+      <a [routerLink]="film.id">
+        <img [src]="film.image" />
+      </a>
+    </li>
+  </ul>

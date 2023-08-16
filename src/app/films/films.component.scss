@@ -1,0 +1,15 @@
+
+
+.film{
+    display: flex;
+    flex-flow: column;
+}
+img{
+    position: absolute;
+}
+p{
+    width: 25rem;
+    display: flex;
+    justify-content: center;
+    margin-left: 28rem;
+}
